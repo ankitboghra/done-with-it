@@ -2,11 +2,7 @@
   "expo": {
     "name": "DoneWithIt",
     "slug": "DoneWithIt",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
@@ -18,13 +14,17 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ankitboghra.donewithit",
+      "buildNumber": "1.0.0"
     },
-    "description": "A marketplace to sell the stuff you don't need any more.",
+    "android": {
+      "package": "com.ankitboghra.donewithit",
+      "versionCode": 1
+    },
+    "description": "A marketplace for selling the stuff you don't need anymore.",
     "notification": {
       "iosDisplayInForeground": true
     },
