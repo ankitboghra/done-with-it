@@ -2,7 +2,11 @@
   "expo": {
     "name": "DoneWithIt",
     "slug": "DoneWithIt",
-    "platforms": ["ios", "android", "web"],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
@@ -23,6 +27,19 @@
     "description": "A marketplace to sell the stuff you don't need any more.",
     "notification": {
       "iosDisplayInForeground": true
+    },
+    "extra": {
+      "bugsnag": {
+        "apiKey": "api-key-here"
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {}
+        }
+      ]
     }
   }
 }
