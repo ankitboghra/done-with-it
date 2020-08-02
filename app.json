@@ -2,6 +2,7 @@
   "expo": {
     "name": "DoneWithIt",
     "slug": "DoneWithIt",
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
@@ -19,9 +20,9 @@
     "ios": {
       "supportsTablet": true
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "description": "A marketplace to sell the stuff you don't need any more."
+    "description": "A marketplace to sell the stuff you don't need any more.",
+    "notification": {
+      "iosDisplayInForeground": true
+    }
   }
 }
