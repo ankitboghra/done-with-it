@@ -14,8 +14,6 @@ import logger from "./app/utility/logger";
 logger.start();
 
 export default function App() {
-  logger.log(new Error("error in app"));
-  
   const [user, setUser] = useState();
   const [isReady, setIsReady] = useState(false);
 
